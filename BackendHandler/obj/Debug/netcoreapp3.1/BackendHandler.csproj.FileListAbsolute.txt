@@ -1,0 +1,16 @@
+C:\Users\jutsu\Desktop\PizzapalatsetGUI-CashierTerminal\WPF_Kassörskan_V2\BackendHandler\bin\Debug\netcoreapp3.1\BackendHandler.deps.json
+C:\Users\jutsu\Desktop\PizzapalatsetGUI-CashierTerminal\WPF_Kassörskan_V2\BackendHandler\bin\Debug\netcoreapp3.1\BackendHandler.dll
+C:\Users\jutsu\Desktop\PizzapalatsetGUI-CashierTerminal\WPF_Kassörskan_V2\BackendHandler\bin\Debug\netcoreapp3.1\BackendHandler.pdb
+C:\Users\jutsu\Desktop\PizzapalatsetGUI-CashierTerminal\WPF_Kassörskan_V2\BackendHandler\obj\Debug\netcoreapp3.1\BackendHandler.csprojAssemblyReference.cache
+C:\Users\jutsu\Desktop\PizzapalatsetGUI-CashierTerminal\WPF_Kassörskan_V2\BackendHandler\obj\Debug\netcoreapp3.1\BackendHandler.AssemblyInfoInputs.cache
+C:\Users\jutsu\Desktop\PizzapalatsetGUI-CashierTerminal\WPF_Kassörskan_V2\BackendHandler\obj\Debug\netcoreapp3.1\BackendHandler.AssemblyInfo.cs
+C:\Users\jutsu\Desktop\PizzapalatsetGUI-CashierTerminal\WPF_Kassörskan_V2\BackendHandler\obj\Debug\netcoreapp3.1\BackendHandler.dll
+C:\Users\jutsu\Desktop\PizzapalatsetGUI-CashierTerminal\WPF_Kassörskan_V2\BackendHandler\obj\Debug\netcoreapp3.1\BackendHandler.pdb
+C:\Users\jutsu\Desktop\ProjektArbete\CookingTerminalMain\BackendHandler\bin\Debug\netcoreapp3.1\BackendHandler.deps.json
+C:\Users\jutsu\Desktop\ProjektArbete\CookingTerminalMain\BackendHandler\bin\Debug\netcoreapp3.1\BackendHandler.dll
+C:\Users\jutsu\Desktop\ProjektArbete\CookingTerminalMain\BackendHandler\bin\Debug\netcoreapp3.1\BackendHandler.pdb
+C:\Users\jutsu\Desktop\ProjektArbete\CookingTerminalMain\BackendHandler\obj\Debug\netcoreapp3.1\BackendHandler.csprojAssemblyReference.cache
+C:\Users\jutsu\Desktop\ProjektArbete\CookingTerminalMain\BackendHandler\obj\Debug\netcoreapp3.1\BackendHandler.AssemblyInfoInputs.cache
+C:\Users\jutsu\Desktop\ProjektArbete\CookingTerminalMain\BackendHandler\obj\Debug\netcoreapp3.1\BackendHandler.AssemblyInfo.cs
+C:\Users\jutsu\Desktop\ProjektArbete\CookingTerminalMain\BackendHandler\obj\Debug\netcoreapp3.1\BackendHandler.dll
+C:\Users\jutsu\Desktop\ProjektArbete\CookingTerminalMain\BackendHandler\obj\Debug\netcoreapp3.1\BackendHandler.pdb

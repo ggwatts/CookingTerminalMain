@@ -1,0 +1,22 @@
+﻿<Window x:Class="CookingTerminalMain.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CookingTerminalMain"
+        mc:Ignorable="d"
+        d:DesignHeight="1000" d:DesignWidth="1800">
+
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Images/LogoBackground.png" />
+        </Grid.Background>
+
+        <Frame Content="{Binding CurrentPage, Converter={local:NavigationValueConverter}}" NavigationUIVisibility="Hidden" Grid.ColumnSpan="2" />
+    </Grid>
+</Window>

@@ -1,0 +1,252 @@
+﻿<Page x:Class="CookingTerminalMain.Pages.ChosenOrderPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CookingTerminalMain"
+      xmlns:viewmodels="clr-namespace:CookingTerminalMain.ViewModels"
+       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ChosenOrderPage">
+   
+    <Page.Resources>
+        <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+
+       
+    </Page.Resources>
+
+
+
+    <Grid>
+      
+    <materialDesign:DialogHost BorderBrush="{DynamicResource MaterialDesignDivider}">
+      <!--Order Served Verifications popupwindow-->
+      <materialDesign:DialogHost.DialogContent>
+
+        <Grid>
+            
+          <Grid.RowDefinitions>
+              <RowDefinition Height="auto"/>
+              <RowDefinition/>
+              <RowDefinition/>
+          </Grid.RowDefinitions>
+            
+          <Image Grid.Row="0" Source="/Images/checkmark.png" Margin="20 20 20 10" HorizontalAlignment="Center" Height="150" MaxWidth="200"/>
+
+          <TextBlock Grid.Row="1" Text="Order serverad" FontWeight="Bold" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="center"/>
+            
+          <Button Grid.Row="2" Content="Fortsätt"  Style="{StaticResource GreenActionButton}" Height="50" Width="120" Margin=" 30 0 30 5" FontSize="16"
+           Command="{Binding ServeOrder}" 
+          CommandParameter="{Binding RelativeSource={RelativeSource Self}, Path=Tag}"
+          Tag="MainMenu">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+          </Button>
+        </Grid>
+
+      </materialDesign:DialogHost.DialogContent>
+  <Grid>
+            
+       
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+
+        </Grid.RowDefinitions>
+
+        <!--Background Color on top row-->
+        <Grid Background="GhostWhite" Grid.Column="0" Grid.ColumnSpan="3"/>
+
+        <Grid Grid.Row="0" Grid.ColumnSpan="3" Margin="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            
+            <!--Top left logo-->
+            <Image Source="\Images\PP-Logo-small.png" Height="80" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="30,0,0,0"/>
+
+            <!--Logout Button-->
+            <StackPanel Grid.Column="7" VerticalAlignment="Center" HorizontalAlignment="Right">
+              <Button Grid.Column="5" Content="Tillbaka" Style="{StaticResource GreenActionButton}" Height="45" Width="90" Margin=" 30 0 30 0" FontSize="15"
+                Command="{Binding ChangePage}" 
+               
+                CommandParameter="{Binding RelativeSource={RelativeSource Self}, Path=Tag}"
+                Tag="MainMenu">
+                 <Button.Resources>
+                   <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                   </Style>
+                 </Button.Resources>
+              </Button>
+            </StackPanel>
+        </Grid>
+        
+        <!--Text Titles-->
+        <TextBlock Grid.Row="1" Text="Maträtter att tillaga" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="10 45 0 0" FontWeight="Bold" />
+        <TextBlock Grid.Row="1" Grid.Column="2" Text="Färdiga maträtter" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="10 45 0 0" FontWeight="Bold"/>
+        
+        <!--Border on the left side of the Page-->
+      <Border Margin="40" BorderBrush="DarkGray" BorderThickness="2" CornerRadius="8,8,8,8" Grid.Row="2" Height="700" Width="500">
+
+        <ItemsControl HorizontalAlignment="Center" ItemsSource="{Binding ShowPendingDish}" VerticalAlignment="Top" Width="450" Height="500" Grid.Row="2" Margin="0 10 0 200" >
+          <ItemsControl.ItemTemplate>
+            <DataTemplate>
+              <Grid>
+
+               <Grid.ColumnDefinitions>
+                   <ColumnDefinition Width="300"/>
+                   <ColumnDefinition Width="100"/>
+               </Grid.ColumnDefinitions>
+                      <StackPanel  Grid.Column="0" HorizontalAlignment="Left">
+                         <StackPanel Orientation="Vertical" Margin="0 0 0 50">
+                             
+                           <!--Shows Pizza Type and base-->
+                           <StackPanel Orientation="Horizontal">
+                                        <TextBlock  Text="{Binding Type}" FontWeight="Bold" FontSize="15" Margin="0 10 0 10"/>
+                                        <TextBlock Text=" " Margin="0 10 0 10"/>
+                                        <TextBlock Text="{Binding Pizzabase}" FontWeight="Bold" FontSize="15" Margin="0 10 0 10"/>
+                           </StackPanel>
+                             
+                           <!--Shows Pizza ingredients-->
+                           <StackPanel Margin="0 0 0 0">
+                             <ItemsControl ItemsSource="{Binding PizzaIngredients}">
+                                <ItemsControl.ItemsPanel>
+                                  <ItemsPanelTemplate>
+                                      <WrapPanel/>
+                                  </ItemsPanelTemplate>
+                                </ItemsControl.ItemsPanel>
+                                   <ItemsControl.ItemTemplate>
+                                      <DataTemplate>
+
+                                        <TextBlock Text="{Binding Type}" Margin="5 0 0 0" >,</TextBlock>
+
+                                      </DataTemplate>
+                                   </ItemsControl.ItemTemplate>
+                             </ItemsControl>
+                           </StackPanel>
+                             
+                            <Border Margin="5 5 5 5 " Width="400" Height="4" CornerRadius="3,3,3,3" Background="Gainsboro" BorderThickness="1"/>
+                        
+                         </StackPanel>
+                      </StackPanel>
+
+                            <!--CookFood button-->
+                            <Button Grid.Column="1" 
+                                    Content="Tillaga" FontSize="15"
+                                    HorizontalAlignment="Right" VerticalAlignment="Center" 
+                                    Style="{StaticResource GreenActionButton}"
+                                    Command="{Binding DataContext.CookDish, 
+                                    RelativeSource={RelativeSource AncestorType=ItemsControl}}"
+                                    CommandParameter="{Binding PizzaIndex}">
+                                    <Button.Resources>
+                                     <Style TargetType="Border">
+                                      <Setter Property="CornerRadius" Value="5"/>
+                                     </Style>
+                                    </Button.Resources>
+                            </Button>
+                 
+                               
+                        </Grid>
+               </DataTemplate>
+          </ItemsControl.ItemTemplate>
+        </ItemsControl>
+          
+      </Border>
+
+
+        <!--Border on the right side of the Page-->
+        <Border Margin="40" BorderBrush="DarkGray" BorderThickness="2" CornerRadius="8,8,8,8" Grid.Column="2" Grid.Row="2" Height="700" Width="500">
+
+          <ItemsControl HorizontalAlignment="Center" ItemsSource="{Binding CookedDish}" VerticalAlignment="Top" Width="450" Height="500" Grid.Row="2" Margin="0 10 0 200" >
+            <ItemsControl.ItemTemplate>
+              <DataTemplate>
+                <Grid>
+                  <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="300"/>
+                    <ColumnDefinition Width="100"/>
+                  </Grid.ColumnDefinitions>
+                    
+                    <StackPanel  Grid.Column="0" HorizontalAlignment="Left">
+                      <StackPanel Orientation="Vertical" Margin="0 0 0 50">
+                          
+                        <!--Shows Pizza Type and base-->
+                        <StackPanel Orientation="Horizontal">
+                          <TextBlock  Text="{Binding Type}" FontWeight="Bold" FontSize="15" Margin="0 10 0 10"/>
+                          <TextBlock Text=" " Margin="0 10 0 10"/>
+                          <TextBlock Text="{Binding Pizzabase}" FontWeight="Bold" FontSize="15" Margin="0 10 0 10"/>
+                        </StackPanel>
+                          <!--Shows Pizza ingredients-->
+                        <StackPanel Margin="0 0 0 0">
+                          <ItemsControl ItemsSource="{Binding PizzaIngredients}">
+                            <ItemsControl.ItemsPanel>
+                              <ItemsPanelTemplate>
+                                  <WrapPanel/>
+                              </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                              
+                            <ItemsControl.ItemTemplate>
+                              <DataTemplate>
+
+                                <TextBlock Text="{Binding Type}" Margin="5 0 0 0" >,</TextBlock>
+
+                              </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                          </ItemsControl>
+                        </StackPanel>
+                          
+                      <Border Margin="5 5 5 5 " Width="400" Height="4" CornerRadius="3,3,3,3" 
+                              Background="Gainsboro" BorderThickness="1"/>
+                          
+                      </StackPanel>
+                    </StackPanel>
+                </Grid>
+              </DataTemplate>
+            </ItemsControl.ItemTemplate>
+          </ItemsControl>
+
+        </Border>
+       
+         <!--Serve Order Button-->
+         <!--"Visibility" Hides the button until all the food has been cooked-->
+         <Button Grid.Column="2" Grid.Row="2" VerticalAlignment="Bottom" HorizontalAlignment="center" Margin="20" FontSize="15"
+          Content="Servera Order" 
+         
+          Style="{StaticResource GreenActionButton}"
+        
+          Visibility="{Binding ServeOrderButtonVisibility, Converter={local:BooleanToVisibilityConverter}, FallbackValue=Hidden}"
+          Command="{x:Static materialDesign:DialogHost.OpenDialogCommand}">
+
+         <Button.Resources>
+            <Style TargetType="Border">
+              <Setter Property="CornerRadius" Value="5"/>
+
+            </Style>
+           
+          </Button.Resources>
+        </Button>
+      
+      
+    </Grid>
+  </materialDesign:DialogHost>
+      
+  </Grid>
+</Page>
+
+
+

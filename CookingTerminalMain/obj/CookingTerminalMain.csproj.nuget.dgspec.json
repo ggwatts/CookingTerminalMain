@@ -1,0 +1,157 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\jutsu\\Desktop\\ProjektArbete\\CookingTerminalMain\\CookingTerminalMain\\CookingTerminalMain.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\jutsu\\Desktop\\ProjektArbete\\CookingTerminalMain\\BackendHandler\\BackendHandler.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\jutsu\\Desktop\\ProjektArbete\\CookingTerminalMain\\BackendHandler\\BackendHandler.csproj",
+        "projectName": "BackendHandler",
+        "projectPath": "C:\\Users\\jutsu\\Desktop\\ProjektArbete\\CookingTerminalMain\\BackendHandler\\BackendHandler.csproj",
+        "packagesPath": "C:\\Users\\jutsu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jutsu\\Desktop\\ProjektArbete\\CookingTerminalMain\\BackendHandler\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jutsu\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.30, )"
+            },
+            "MaterialDesignColors": {
+              "target": "Package",
+              "version": "[1.2.3, )"
+            },
+            "MaterialDesignThemes": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[4.1.3, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\jutsu\\Desktop\\ProjektArbete\\CookingTerminalMain\\CookingTerminalMain\\CookingTerminalMain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\jutsu\\Desktop\\ProjektArbete\\CookingTerminalMain\\CookingTerminalMain\\CookingTerminalMain.csproj",
+        "projectName": "CookingTerminalMain",
+        "projectPath": "C:\\Users\\jutsu\\Desktop\\ProjektArbete\\CookingTerminalMain\\CookingTerminalMain\\CookingTerminalMain.csproj",
+        "packagesPath": "C:\\Users\\jutsu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jutsu\\Desktop\\ProjektArbete\\CookingTerminalMain\\CookingTerminalMain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jutsu\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\jutsu\\Desktop\\ProjektArbete\\CookingTerminalMain\\BackendHandler\\BackendHandler.csproj": {
+                "projectPath": "C:\\Users\\jutsu\\Desktop\\ProjektArbete\\CookingTerminalMain\\BackendHandler\\BackendHandler.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "MaterialDesignColors": {
+              "target": "Package",
+              "version": "[1.2.3, )"
+            },
+            "MaterialDesignThemes": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
