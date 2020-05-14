@@ -43,7 +43,8 @@ namespace CookingTerminalMain.ViewModels
         }
 
         #endregion
-
+        //Test Github check
+        public string test { get; set; }
         #region Commands
         public ICommand CookOrder { get; set; }
 

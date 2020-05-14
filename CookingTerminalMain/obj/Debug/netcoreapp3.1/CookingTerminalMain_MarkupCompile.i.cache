@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\jutsu\Desktop\ProjektArbete\CookingTerminalMain\CookingTerminalMain\obj\Debug\netcoreapp3.1\
+C:\Users\jutsu\Documents\GitHub\CookingTerminalMain\CookingTerminalMain\obj\Debug\netcoreapp3.1\
 CookingTerminalMain
 none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
-C:\Users\jutsu\Desktop\ProjektArbete\CookingTerminalMain\CookingTerminalMain\App.xaml
+C:\Users\jutsu\Documents\GitHub\CookingTerminalMain\CookingTerminalMain\App.xaml
 91474989246
 
 2686276527
-199261370389
+1991400764891
 MainWindow.xaml;Pages\ChosenOrderPage.xaml;Pages\LoginPage.xaml;Pages\MainMenuPage.xaml;Styles\Buttons.xaml;Styles\Colors.xaml;Styles\Fonts.xaml;Styles\ListViews.xaml;Styles\Texts.xaml;
 
 False

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qgMcPVIitSBpjkbQYwIcMmmRZJT0iN4ixv0P3TmRvJlYe0Nh7tkPml57Ag+zpXJLFUQz9EJt8Qe43YZUNM+T6Q==",
+  "dgSpecHash": "osCf8KiJOF1dqJPBC2OwKWknZYI+C1ZjvfHFqs3wnJChETUysAjCMgEXPM/IFM+YSTWqbOvd/32TsRzRa9QcIg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jutsu\\Documents\\GitHub\\CookingTerminalMain\\CookingTerminalMain\\CookingTerminalMain.csproj",
+  "projectFilePath": "C:\\Users\\jutsu\\Documents\\GitHub\\CookingTerminalMain\\BackendHandler\\BackendHandler.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jutsu\\.nuget\\packages\\dapper\\2.0.30\\dapper.2.0.30.nupkg.sha512",
     "C:\\Users\\jutsu\\.nuget\\packages\\materialdesigncolors\\1.2.3\\materialdesigncolors.1.2.3.nupkg.sha512",
